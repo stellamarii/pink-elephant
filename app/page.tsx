@@ -47,6 +47,19 @@ export default async function Index() {
   } = await supabase.auth.getUser()
 
   return (
-    <h1>Hi</h1>
+    <nav>
+      <h1>Home page</h1>
+    {user ? (
+      <div>
+        Hey, {user.email}!
+        <LogoutButton />
+      </div>
+    ) : (
+      <Link href="/login">
+        Login
+      </Link>
+    )}
+  </nav>
+  
   )
 }
