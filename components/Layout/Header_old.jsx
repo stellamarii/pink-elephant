@@ -1,10 +1,11 @@
 import * as React from 'react';
+import "./Header.css";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import { CssBaseline, Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
-import ThemeRegistry from '../components/ThemeRegistry/ThemeRegistry';
+import ThemeRegistry from '../ThemeRegistry/ThemeRegistry';
 import { NavLink } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import PetsIcon from '@mui/icons-material/Pets';
